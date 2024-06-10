@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:KcalLogger.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:KcalLogger"
+      name = "KcalLogger">
+      <FileRef
+         location = "group:KcalLogger/Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:KcalLogger/GoogleService-Info.plist">
+      </FileRef>
+      <Group
+         location = "group:KcalLogger/API"
+         name = "API">
+         <Group
+            location = "group:KcalLogger/API/User Api"
+            name = "User Api">
+            <FileRef
+               location = "group:KcalLogger/API/User Api/UserApiProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/API/User Api/UserApi.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:KcalLogger/API/Meal Api"
+            name = "Meal Api">
+            <FileRef
+               location = "group:KcalLogger/API/Meal Api/MealApiProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/API/Meal Api/MealApi.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:KcalLogger/API/ApiExtensions.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:KcalLogger/Models"
+         name = "Models">
+         <FileRef
+            location = "group:KcalLogger/Models/AppUser.swift">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Models/AppUserOperations.swift">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Models/Meal.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:KcalLogger/Controllers"
+         name = "Controllers">
+         <Group
+            location = "group:KcalLogger/Controllers/SignUp"
+            name = "SignUp">
+            <FileRef
+               location = "group:KcalLogger/Controllers/SignUp/LoginViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/Controllers/SignUp/RegistrationViewController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:KcalLogger/Controllers/Settings"
+            name = "Settings">
+            <FileRef
+               location = "group:KcalLogger/Controllers/Settings/SettingsViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/Controllers/Settings/SettingsViewModel.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:KcalLogger/Controllers/Meal List"
+            name = "Meal List">
+            <FileRef
+               location = "group:KcalLogger/Controllers/Meal List/MealListViewModelProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/Controllers/Meal List/MealListViewModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/Controllers/Meal List/MealListViewController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:KcalLogger/Controllers/Meal"
+            name = "Meal">
+            <FileRef
+               location = "group:KcalLogger/Controllers/Meal/CreateEditMealViewModelProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/Controllers/Meal/CreateEditMealViewModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KcalLogger/Controllers/Meal/CreateEditMealViewController.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:KcalLogger/Views"
+         name = "Views">
+         <Group
+            location = "group:KcalLogger/Views/Cell"
+            name = "Cell">
+            <FileRef
+               location = "group:KcalLogger/Views/Cell/MealCell.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:KcalLogger/Storyboards"
+         name = "Storyboards">
+         <Group
+            location = "group:KcalLogger/Storyboards"
+            name = "LaunchScreen.storyboard">
+            <FileRef
+               location = "group:KcalLogger/Storyboards/Base.lproj/LaunchScreen.storyboard">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:KcalLogger/Storyboards"
+            name = "MealList.storyboard">
+            <FileRef
+               location = "group:KcalLogger/Storyboards/Base.lproj/MealList.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:KcalLogger/Storyboards/Login.storyboard">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Storyboards/Settings.storyboard">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Storyboards/CreateEditMeal.storyboard">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:KcalLogger/Resources"
+         name = "Resources">
+         <FileRef
+            location = "group:KcalLogger/Resources/Assets.xcassets">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Resources/Configs.swift">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Resources/Extensions.swift">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Resources/AlertHelper.swift">
+         </FileRef>
+         <FileRef
+            location = "group:KcalLogger/Resources/Dynamic.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:KcalLogger/AppDelegate.swift">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

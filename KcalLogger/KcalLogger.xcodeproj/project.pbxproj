@@ -1,0 +1,1188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8009EC952246422C0056DB68 /* AdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009EC942246422C0056DB68 /* AdminUITests.swift */; };
+		8009ECC6224651E40056DB68 /* FilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ECC5224651E40056DB68 /* FilterUITests.swift */; };
+		8009ECC8224676CC0056DB68 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ECC7224676CC0056DB68 /* RegistrationViewModel.swift */; };
+		8009ECCB224692340056DB68 /* MealAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ECCA224692340056DB68 /* MealAPITests.swift */; };
+		8009ECCD2246A5F40056DB68 /* UserAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ECCC2246A5F40056DB68 /* UserAPITests.swift */; };
+		80112700223BBDC6001A7063 /* UserAPI_Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801126FF223BBDC6001A7063 /* UserAPI_Mock.swift */; };
+		80112702223BBFEE001A7063 /* UserFlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80112701223BBFEE001A7063 /* UserFlowTest.swift */; };
+		80112704223BC083001A7063 /* UserApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80112703223BC083001A7063 /* UserApiProtocol.swift */; };
+		8011270A223C1E5B001A7063 /* SettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80112709223C1E5B001A7063 /* SettingsUITests.swift */; };
+		8011270C223C2554001A7063 /* MealListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8011270B223C2554001A7063 /* MealListViewModel.swift */; };
+		80112710223C2DE3001A7063 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8011270F223C2DE3001A7063 /* MealCell.swift */; };
+		801F6F8722383B6900E7FD63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F6F8622383B6900E7FD63 /* AppDelegate.swift */; };
+		801F6F8922383B6900E7FD63 /* MealListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F6F8822383B6900E7FD63 /* MealListViewController.swift */; };
+		801F6F8C22383B6900E7FD63 /* MealList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801F6F8A22383B6900E7FD63 /* MealList.storyboard */; };
+		801F6F8E22383B6A00E7FD63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801F6F8D22383B6A00E7FD63 /* Assets.xcassets */; };
+		801F6F9122383B6A00E7FD63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801F6F8F22383B6A00E7FD63 /* LaunchScreen.storyboard */; };
+		801F6FA722383B6A00E7FD63 /* KcalLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F6FA622383B6A00E7FD63 /* KcalLoggerUITests.swift */; };
+		801F6FC022383B8800E7FD63 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F6FB522383B8800E7FD63 /* Meal.swift */; };
+		801F6FC122383B8800E7FD63 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F6FBF22383B8800E7FD63 /* AppUser.swift */; };
+		801F6FC322383CD000E7FD63 /* MealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F6FC222383CD000E7FD63 /* MealTests.swift */; };
+		802900502242AAD60071FB3B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802900012242AAD60071FB3B /* UIView+Extensions.swift */; };
+		802900582242AAD60071FB3B /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802900092242AAD60071FB3B /* UIAlertController+Extensions.swift */; };
+		8029005A2242AAD60071FB3B /* Common+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029000B2242AAD60071FB3B /* Common+Extensions.swift */; };
+		802900752242AAD70071FB3B /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029003A2242AAD60071FB3B /* DatePickerViewController.swift */; };
+		80309EA822398753007C8922 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80309EA722398753007C8922 /* UserTests.swift */; };
+		80435E89223AAD410089F489 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80435E88223AAD410089F489 /* GoogleService-Info.plist */; };
+		80435E8C223AAF3C0089F489 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80435E8B223AAF3C0089F489 /* Login.storyboard */; };
+		80435E8E223AB28F0089F489 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80435E8D223AB28F0089F489 /* Configs.swift */; };
+		80435E90223AB2BF0089F489 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80435E8F223AB2BF0089F489 /* Extensions.swift */; };
+		80447C9E2243E26C00D88738 /* OneTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80447C9C2243E26C00D88738 /* OneTextFieldViewController.swift */; };
+		80447CB12243E2CC00D88738 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80447CAE2243E2CB00D88738 /* TextField.swift */; };
+		80447CB52243EB8700D88738 /* RolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80447CB42243EB8700D88738 /* RolesViewController.swift */; };
+		80447CB72243EBCF00D88738 /* RolesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80447CB62243EBCF00D88738 /* RolesViewModel.swift */; };
+		80447CB92244003800D88738 /* EditingUserInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80447CB82244003800D88738 /* EditingUserInfo.xib */; };
+		80447CBB2244009500D88738 /* EditingUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80447CBA2244009500D88738 /* EditingUserInfo.swift */; };
+		804AE84B2248F88000798734 /* MealListViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE84A2248F88000798734 /* MealListViewController+Table.swift */; };
+		804AE84D2248F8E300798734 /* MealListViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE84C2248F8E300798734 /* MealListViewController+Filter.swift */; };
+		804AE84F2248F9EC00798734 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE84E2248F9EC00798734 /* LoginViewModel.swift */; };
+		8066D17B2246D20200AFD002 /* MealListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066D17A2246D20200AFD002 /* MealListModelTest.swift */; };
+		80902549223FCABA00C4C660 /* MealListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80902548223FCABA00C4C660 /* MealListViewModelProtocol.swift */; };
+		8090254C2240135600C4C660 /* MealListsViewModel_Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090254B2240135600C4C660 /* MealListsViewModel_Mock.swift */; };
+		80902550224018BD00C4C660 /* MealLogicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090254F224018BD00C4C660 /* MealLogicUITests.swift */; };
+		80902551224019FD00C4C660 /* MealListsViewModel_Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090254B2240135600C4C660 /* MealListsViewModel_Mock.swift */; };
+		80AEFA4E223CDFEB00A919BD /* UserAPI_Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801126FF223BBDC6001A7063 /* UserAPI_Mock.swift */; };
+		80AEFA52223CE3A900A919BD /* MealApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEFA51223CE3A900A919BD /* MealApiProtocol.swift */; };
+		80AEFA54223CE51D00A919BD /* MealApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEFA53223CE51D00A919BD /* MealApi.swift */; };
+		80AEFA56223CE7B800A919BD /* AppUserOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEFA55223CE7B800A919BD /* AppUserOperations.swift */; };
+		80AEFA59223CF99300A919BD /* CreateEditMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEFA58223CF99300A919BD /* CreateEditMealViewController.swift */; };
+		80AEFA5C223CF9A900A919BD /* CreateEditMeal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AEFA5B223CF9A900A919BD /* CreateEditMeal.storyboard */; };
+		80AEFA5E223CFE4E00A919BD /* CreateEditMealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEFA5D223CFE4E00A919BD /* CreateEditMealViewModel.swift */; };
+		80BF6C072242BA6500E0EBF6 /* Adminstration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BF6C062242BA6500E0EBF6 /* Adminstration.storyboard */; };
+		80BF6C0A2242C0CE00E0EBF6 /* AdministrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF6C092242C0CE00E0EBF6 /* AdministrationViewModel.swift */; };
+		80BF6C0C2242C0DB00E0EBF6 /* AdministrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF6C0B2242C0DB00E0EBF6 /* AdministrationViewController.swift */; };
+		80BF6C0E2242C32A00E0EBF6 /* AdministrationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF6C0D2242C32A00E0EBF6 /* AdministrationViewModelProtocol.swift */; };
+		80D0170A223AB67D0056B1B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D01709223AB67D0056B1B3 /* LoginViewController.swift */; };
+		80D0170C223ABA6C0056B1B3 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0170B223ABA6C0056B1B3 /* AlertHelper.swift */; };
+		80D0170E223ABB5C0056B1B3 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0170D223ABB5C0056B1B3 /* RegistrationViewController.swift */; };
+		80D01711223ABE630056B1B3 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D01710223ABE630056B1B3 /* UserApi.swift */; };
+		80D01713223ABFEE0056B1B3 /* ApiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D01712223ABFEE0056B1B3 /* ApiExtensions.swift */; };
+		80D01715223ACF8B0056B1B3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D01714223ACF8B0056B1B3 /* Settings.storyboard */; };
+		80D01717223AD0DD0056B1B3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D01716223AD0DD0056B1B3 /* SettingsViewController.swift */; };
+		80D01719223AD2EE0056B1B3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D01718223AD2EE0056B1B3 /* SettingsViewModel.swift */; };
+		80D19395224502DA00C9B1FE /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D19394224502DA00C9B1FE /* ChangePasswordViewController.swift */; };
+		80D193972245065600C9B1FE /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D193962245065600C9B1FE /* ChangePasswordViewModel.swift */; };
+		80D193992245098C00C9B1FE /* ChangePasswordViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D193982245098C00C9B1FE /* ChangePasswordViewModelProtocol.swift */; };
+		80D1939B22454F8200C9B1FE /* TimeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D1939A22454F8200C9B1FE /* TimeExtension.swift */; };
+		80ED6F7A223E9A7400AA344E /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED6F79223E9A7400AA344E /* Dynamic.swift */; };
+		80ED6F7C223EB10300AA344E /* CreateEditMealViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED6F7B223EB10300AA344E /* CreateEditMealViewModelProtocol.swift */; };
+		80FEAFF022415E3B00B0C607 /* CalorieExcessTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FEAFEF22415E3B00B0C607 /* CalorieExcessTest.swift */; };
+		91A8DC0652A2F3548FCA3756 /* Pods_KcalLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886B443C004722F843D5FF8F /* Pods_KcalLogger.framework */; };
+		C9FA3D8850200ACC934712B7 /* libPods-KcalLoggerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8222A7607C9D73F7D0EA5752 /* libPods-KcalLoggerTests.a */; };
+		CF7025B139849BF936B6B7D7 /* libPods-KcalLoggerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39357ACD88D712F11FF1E0 /* libPods-KcalLoggerUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		801F6F9822383B6A00E7FD63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801F6F7B22383B6900E7FD63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801F6F8222383B6900E7FD63;
+			remoteInfo = KcalLogger;
+		};
+		801F6FA322383B6A00E7FD63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801F6F7B22383B6900E7FD63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801F6F8222383B6900E7FD63;
+			remoteInfo = KcalLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		194461C3344D076DCF8F81F6 /* Pods-KcalLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcalLogger.release.xcconfig"; path = "Target Support Files/Pods-KcalLogger/Pods-KcalLogger.release.xcconfig"; sourceTree = "<group>"; };
+		2D2C5668BC7FA7647445C73C /* Pods-KcalLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcalLogger.debug.xcconfig"; path = "Target Support Files/Pods-KcalLogger/Pods-KcalLogger.debug.xcconfig"; sourceTree = "<group>"; };
+		2DFAF4B9EF95850B5AB935E0 /* Pods-KcalLoggerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcalLoggerTests.release.xcconfig"; path = "Target Support Files/Pods-KcalLoggerTests/Pods-KcalLoggerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F39357ACD88D712F11FF1E0 /* libPods-KcalLoggerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KcalLoggerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7444FFED5DB0DA40FCAFF62E /* Pods-KcalLoggerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcalLoggerUITests.release.xcconfig"; path = "Target Support Files/Pods-KcalLoggerUITests/Pods-KcalLoggerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8009EC942246422C0056DB68 /* AdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminUITests.swift; sourceTree = "<group>"; };
+		8009ECC5224651E40056DB68 /* FilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterUITests.swift; sourceTree = "<group>"; };
+		8009ECC7224676CC0056DB68 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		8009ECCA224692340056DB68 /* MealAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAPITests.swift; sourceTree = "<group>"; };
+		8009ECCC2246A5F40056DB68 /* UserAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPITests.swift; sourceTree = "<group>"; };
+		801126FF223BBDC6001A7063 /* UserAPI_Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI_Mock.swift; sourceTree = "<group>"; };
+		80112701223BBFEE001A7063 /* UserFlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowTest.swift; sourceTree = "<group>"; };
+		80112703223BC083001A7063 /* UserApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiProtocol.swift; sourceTree = "<group>"; };
+		80112709223C1E5B001A7063 /* SettingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUITests.swift; sourceTree = "<group>"; };
+		8011270B223C2554001A7063 /* MealListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModel.swift; sourceTree = "<group>"; };
+		8011270F223C2DE3001A7063 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		801F6F8322383B6900E7FD63 /* KcalLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KcalLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801F6F8622383B6900E7FD63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		801F6F8822383B6900E7FD63 /* MealListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewController.swift; sourceTree = "<group>"; };
+		801F6F8B22383B6900E7FD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MealList.storyboard; sourceTree = "<group>"; };
+		801F6F8D22383B6A00E7FD63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		801F6F9022383B6A00E7FD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		801F6F9222383B6A00E7FD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801F6F9722383B6A00E7FD63 /* KcalLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KcalLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		801F6F9D22383B6A00E7FD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801F6FA222383B6A00E7FD63 /* KcalLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KcalLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		801F6FA622383B6A00E7FD63 /* KcalLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KcalLoggerUITests.swift; sourceTree = "<group>"; };
+		801F6FA822383B6A00E7FD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801F6FB522383B8800E7FD63 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		801F6FBF22383B8800E7FD63 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		801F6FC222383CD000E7FD63 /* MealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTests.swift; sourceTree = "<group>"; };
+		802900012242AAD60071FB3B /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		802900092242AAD60071FB3B /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		8029000B2242AAD60071FB3B /* Common+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Common+Extensions.swift"; sourceTree = "<group>"; };
+		8029003A2242AAD60071FB3B /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		80309EA722398753007C8922 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		80435E88223AAD410089F489 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80435E8B223AAF3C0089F489 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		80435E8D223AB28F0089F489 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		80435E8F223AB2BF0089F489 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		80447C9C2243E26C00D88738 /* OneTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTextFieldViewController.swift; sourceTree = "<group>"; };
+		80447CAE2243E2CB00D88738 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		80447CB42243EB8700D88738 /* RolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesViewController.swift; sourceTree = "<group>"; };
+		80447CB62243EBCF00D88738 /* RolesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesViewModel.swift; sourceTree = "<group>"; };
+		80447CB82244003800D88738 /* EditingUserInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditingUserInfo.xib; sourceTree = "<group>"; };
+		80447CBA2244009500D88738 /* EditingUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingUserInfo.swift; sourceTree = "<group>"; };
+		804AE84A2248F88000798734 /* MealListViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealListViewController+Table.swift"; sourceTree = "<group>"; };
+		804AE84C2248F8E300798734 /* MealListViewController+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealListViewController+Filter.swift"; sourceTree = "<group>"; };
+		804AE84E2248F9EC00798734 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8066D17A2246D20200AFD002 /* MealListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListModelTest.swift; sourceTree = "<group>"; };
+		80902548223FCABA00C4C660 /* MealListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModelProtocol.swift; sourceTree = "<group>"; };
+		8090254B2240135600C4C660 /* MealListsViewModel_Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListsViewModel_Mock.swift; sourceTree = "<group>"; };
+		8090254F224018BD00C4C660 /* MealLogicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealLogicUITests.swift; sourceTree = "<group>"; };
+		80AEFA51223CE3A900A919BD /* MealApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealApiProtocol.swift; sourceTree = "<group>"; };
+		80AEFA53223CE51D00A919BD /* MealApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealApi.swift; sourceTree = "<group>"; };
+		80AEFA55223CE7B800A919BD /* AppUserOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserOperations.swift; sourceTree = "<group>"; };
+		80AEFA58223CF99300A919BD /* CreateEditMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditMealViewController.swift; sourceTree = "<group>"; };
+		80AEFA5B223CF9A900A919BD /* CreateEditMeal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEditMeal.storyboard; sourceTree = "<group>"; };
+		80AEFA5D223CFE4E00A919BD /* CreateEditMealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditMealViewModel.swift; sourceTree = "<group>"; };
+		80BF6C062242BA6500E0EBF6 /* Adminstration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Adminstration.storyboard; sourceTree = "<group>"; };
+		80BF6C092242C0CE00E0EBF6 /* AdministrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministrationViewModel.swift; sourceTree = "<group>"; };
+		80BF6C0B2242C0DB00E0EBF6 /* AdministrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministrationViewController.swift; sourceTree = "<group>"; };
+		80BF6C0D2242C32A00E0EBF6 /* AdministrationViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministrationViewModelProtocol.swift; sourceTree = "<group>"; };
+		80D01709223AB67D0056B1B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		80D0170B223ABA6C0056B1B3 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		80D0170D223ABB5C0056B1B3 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		80D01710223ABE630056B1B3 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		80D01712223ABFEE0056B1B3 /* ApiExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiExtensions.swift; sourceTree = "<group>"; };
+		80D01714223ACF8B0056B1B3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		80D01716223AD0DD0056B1B3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		80D01718223AD2EE0056B1B3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		80D19394224502DA00C9B1FE /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		80D193962245065600C9B1FE /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		80D193982245098C00C9B1FE /* ChangePasswordViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModelProtocol.swift; sourceTree = "<group>"; };
+		80D1939A22454F8200C9B1FE /* TimeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeExtension.swift; sourceTree = "<group>"; };
+		80ED6F79223E9A7400AA344E /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		80ED6F7B223EB10300AA344E /* CreateEditMealViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditMealViewModelProtocol.swift; sourceTree = "<group>"; };
+		80FEAFEF22415E3B00B0C607 /* CalorieExcessTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieExcessTest.swift; sourceTree = "<group>"; };
+		8222A7607C9D73F7D0EA5752 /* libPods-KcalLoggerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KcalLoggerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		886B443C004722F843D5FF8F /* Pods_KcalLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KcalLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3737814A0CE28AB4DA5C957 /* Pods-KcalLoggerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcalLoggerTests.debug.xcconfig"; path = "Target Support Files/Pods-KcalLoggerTests/Pods-KcalLoggerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EECAEF59C192551059711B70 /* Pods-KcalLoggerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcalLoggerUITests.debug.xcconfig"; path = "Target Support Files/Pods-KcalLoggerUITests/Pods-KcalLoggerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		801F6F8022383B6900E7FD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A8DC0652A2F3548FCA3756 /* Pods_KcalLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801F6F9422383B6A00E7FD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FA3D8850200ACC934712B7 /* libPods-KcalLoggerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801F6F9F22383B6A00E7FD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7025B139849BF936B6B7D7 /* libPods-KcalLoggerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FDCCF243F187A73BCFF187C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D2C5668BC7FA7647445C73C /* Pods-KcalLogger.debug.xcconfig */,
+				194461C3344D076DCF8F81F6 /* Pods-KcalLogger.release.xcconfig */,
+				B3737814A0CE28AB4DA5C957 /* Pods-KcalLoggerTests.debug.xcconfig */,
+				2DFAF4B9EF95850B5AB935E0 /* Pods-KcalLoggerTests.release.xcconfig */,
+				EECAEF59C192551059711B70 /* Pods-KcalLoggerUITests.debug.xcconfig */,
+				7444FFED5DB0DA40FCAFF62E /* Pods-KcalLoggerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8009ECC9224692160056DB68 /* REST API Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8009ECCA224692340056DB68 /* MealAPITests.swift */,
+				8009ECCC2246A5F40056DB68 /* UserAPITests.swift */,
+			);
+			path = "REST API Tests";
+			sourceTree = "<group>";
+		};
+		801126FE223BBD6D001A7063 /* API Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				801126FF223BBDC6001A7063 /* UserAPI_Mock.swift */,
+			);
+			path = "API Mocks";
+			sourceTree = "<group>";
+		};
+		80112705223BDA08001A7063 /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				80112701223BBFEE001A7063 /* UserFlowTest.swift */,
+				801F6FC222383CD000E7FD63 /* MealTests.swift */,
+				80309EA722398753007C8922 /* UserTests.swift */,
+			);
+			path = "Model Tests";
+			sourceTree = "<group>";
+		};
+		8011270D223C2DD0001A7063 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8011270E223C2DD8001A7063 /* Cell */,
+				80447CB82244003800D88738 /* EditingUserInfo.xib */,
+				80447CBA2244009500D88738 /* EditingUserInfo.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8011270E223C2DD8001A7063 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8011270F223C2DE3001A7063 /* MealCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		801F6F7A22383B6900E7FD63 = {
+			isa = PBXGroup;
+			children = (
+				801F6F8522383B6900E7FD63 /* KcalLogger */,
+				801F6F9A22383B6A00E7FD63 /* KcalLoggerTests */,
+				801F6FA522383B6A00E7FD63 /* KcalLoggerUITests */,
+				801F6F8422383B6900E7FD63 /* Products */,
+				3FDCCF243F187A73BCFF187C /* Pods */,
+				D06E1FCDDF12F76C269CC05B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		801F6F8422383B6900E7FD63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801F6F8322383B6900E7FD63 /* KcalLogger.app */,
+				801F6F9722383B6A00E7FD63 /* KcalLoggerTests.xctest */,
+				801F6FA222383B6A00E7FD63 /* KcalLoggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		801F6F8522383B6900E7FD63 /* KcalLogger */ = {
+			isa = PBXGroup;
+			children = (
+				8029FFF72242A8440071FB3B /* External */,
+				80D0170F223ABE540056B1B3 /* API */,
+				801F6FB422383B7A00E7FD63 /* Models */,
+				80D01708223AB66F0056B1B3 /* Controllers */,
+				8011270D223C2DD0001A7063 /* Views */,
+				80435E8A223AAF2B0089F489 /* Storyboards */,
+				80D0171D223ADB460056B1B3 /* Resources */,
+				801F6F9222383B6A00E7FD63 /* Info.plist */,
+				80435E88223AAD410089F489 /* GoogleService-Info.plist */,
+				801F6F8622383B6900E7FD63 /* AppDelegate.swift */,
+			);
+			path = KcalLogger;
+			sourceTree = "<group>";
+		};
+		801F6F9A22383B6A00E7FD63 /* KcalLoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8009ECC9224692160056DB68 /* REST API Tests */,
+				8090254A2240132700C4C660 /* ViewModel Mocks */,
+				801126FE223BBD6D001A7063 /* API Mocks */,
+				80112705223BDA08001A7063 /* Model Tests */,
+				80FEAFEF22415E3B00B0C607 /* CalorieExcessTest.swift */,
+				801F6F9D22383B6A00E7FD63 /* Info.plist */,
+				8066D17A2246D20200AFD002 /* MealListModelTest.swift */,
+			);
+			path = KcalLoggerTests;
+			sourceTree = "<group>";
+		};
+		801F6FA522383B6A00E7FD63 /* KcalLoggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				801F6FA622383B6A00E7FD63 /* KcalLoggerUITests.swift */,
+				80112709223C1E5B001A7063 /* SettingsUITests.swift */,
+				8009EC942246422C0056DB68 /* AdminUITests.swift */,
+				8090254F224018BD00C4C660 /* MealLogicUITests.swift */,
+				8009ECC5224651E40056DB68 /* FilterUITests.swift */,
+				801F6FA822383B6A00E7FD63 /* Info.plist */,
+			);
+			path = KcalLoggerUITests;
+			sourceTree = "<group>";
+		};
+		801F6FB422383B7A00E7FD63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				801F6FBF22383B8800E7FD63 /* AppUser.swift */,
+				80AEFA55223CE7B800A919BD /* AppUserOperations.swift */,
+				801F6FB522383B8800E7FD63 /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		802900122242AAD60071FB3B /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				80447C9A2243E26C00D88738 /* TextFields */,
+				802900392242AAD60071FB3B /* Date */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		802900392242AAD60071FB3B /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				8029003A2242AAD60071FB3B /* DatePickerViewController.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		802900462242AAD60071FB3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80447CAE2243E2CB00D88738 /* TextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8029FFF72242A8440071FB3B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8029FFFB2242AAD60071FB3B /* Source */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		8029FFFB2242AAD60071FB3B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8029FFFC2242AAD60071FB3B /* Extensions */,
+				802900122242AAD60071FB3B /* Pickers */,
+				802900462242AAD60071FB3B /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8029FFFC2242AAD60071FB3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				802900012242AAD60071FB3B /* UIView+Extensions.swift */,
+				802900092242AAD60071FB3B /* UIAlertController+Extensions.swift */,
+				8029000B2242AAD60071FB3B /* Common+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80435E8A223AAF2B0089F489 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				801F6F8F22383B6A00E7FD63 /* LaunchScreen.storyboard */,
+				801F6F8A22383B6900E7FD63 /* MealList.storyboard */,
+				80435E8B223AAF3C0089F489 /* Login.storyboard */,
+				80D01714223ACF8B0056B1B3 /* Settings.storyboard */,
+				80AEFA5B223CF9A900A919BD /* CreateEditMeal.storyboard */,
+				80BF6C062242BA6500E0EBF6 /* Adminstration.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		80447C9A2243E26C00D88738 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				80447C9C2243E26C00D88738 /* OneTextFieldViewController.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		8090254A2240132700C4C660 /* ViewModel Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8090254B2240135600C4C660 /* MealListsViewModel_Mock.swift */,
+			);
+			path = "ViewModel Mocks";
+			sourceTree = "<group>";
+		};
+		80AEFA4F223CE38C00A919BD /* User Api */ = {
+			isa = PBXGroup;
+			children = (
+				80112703223BC083001A7063 /* UserApiProtocol.swift */,
+				80D01710223ABE630056B1B3 /* UserApi.swift */,
+			);
+			path = "User Api";
+			sourceTree = "<group>";
+		};
+		80AEFA50223CE39700A919BD /* Meal Api */ = {
+			isa = PBXGroup;
+			children = (
+				80AEFA51223CE3A900A919BD /* MealApiProtocol.swift */,
+				80AEFA53223CE51D00A919BD /* MealApi.swift */,
+			);
+			path = "Meal Api";
+			sourceTree = "<group>";
+		};
+		80AEFA57223CF97100A919BD /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				80ED6F7B223EB10300AA344E /* CreateEditMealViewModelProtocol.swift */,
+				80AEFA5D223CFE4E00A919BD /* CreateEditMealViewModel.swift */,
+				80AEFA58223CF99300A919BD /* CreateEditMealViewController.swift */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		80BF6C082242C0B800E0EBF6 /* Administration */ = {
+			isa = PBXGroup;
+			children = (
+				80BF6C0D2242C32A00E0EBF6 /* AdministrationViewModelProtocol.swift */,
+				80BF6C092242C0CE00E0EBF6 /* AdministrationViewModel.swift */,
+				80BF6C0B2242C0DB00E0EBF6 /* AdministrationViewController.swift */,
+			);
+			path = Administration;
+			sourceTree = "<group>";
+		};
+		80D01708223AB66F0056B1B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80BF6C082242C0B800E0EBF6 /* Administration */,
+				80D0171B223ADB240056B1B3 /* SignUp */,
+				80D0171A223AD69E0056B1B3 /* Settings */,
+				80D0171C223ADB330056B1B3 /* Meal List */,
+				80AEFA57223CF97100A919BD /* Meal */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80D0170F223ABE540056B1B3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				80AEFA4F223CE38C00A919BD /* User Api */,
+				80AEFA50223CE39700A919BD /* Meal Api */,
+				80D01712223ABFEE0056B1B3 /* ApiExtensions.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		80D0171A223AD69E0056B1B3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				80D01718223AD2EE0056B1B3 /* SettingsViewModel.swift */,
+				80D01716223AD0DD0056B1B3 /* SettingsViewController.swift */,
+				80447CB62243EBCF00D88738 /* RolesViewModel.swift */,
+				80447CB42243EB8700D88738 /* RolesViewController.swift */,
+				80D193982245098C00C9B1FE /* ChangePasswordViewModelProtocol.swift */,
+				80D193962245065600C9B1FE /* ChangePasswordViewModel.swift */,
+				80D19394224502DA00C9B1FE /* ChangePasswordViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		80D0171B223ADB240056B1B3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				804AE84E2248F9EC00798734 /* LoginViewModel.swift */,
+				80D01709223AB67D0056B1B3 /* LoginViewController.swift */,
+				8009ECC7224676CC0056DB68 /* RegistrationViewModel.swift */,
+				80D0170D223ABB5C0056B1B3 /* RegistrationViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		80D0171C223ADB330056B1B3 /* Meal List */ = {
+			isa = PBXGroup;
+			children = (
+				80902548223FCABA00C4C660 /* MealListViewModelProtocol.swift */,
+				8011270B223C2554001A7063 /* MealListViewModel.swift */,
+				801F6F8822383B6900E7FD63 /* MealListViewController.swift */,
+				804AE84A2248F88000798734 /* MealListViewController+Table.swift */,
+				804AE84C2248F8E300798734 /* MealListViewController+Filter.swift */,
+			);
+			path = "Meal List";
+			sourceTree = "<group>";
+		};
+		80D0171D223ADB460056B1B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				801F6F8D22383B6A00E7FD63 /* Assets.xcassets */,
+				80435E8D223AB28F0089F489 /* Configs.swift */,
+				80435E8F223AB2BF0089F489 /* Extensions.swift */,
+				80D0170B223ABA6C0056B1B3 /* AlertHelper.swift */,
+				80ED6F79223E9A7400AA344E /* Dynamic.swift */,
+				80D1939A22454F8200C9B1FE /* TimeExtension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D06E1FCDDF12F76C269CC05B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				886B443C004722F843D5FF8F /* Pods_KcalLogger.framework */,
+				8222A7607C9D73F7D0EA5752 /* libPods-KcalLoggerTests.a */,
+				5F39357ACD88D712F11FF1E0 /* libPods-KcalLoggerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		801F6F8222383B6900E7FD63 /* KcalLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801F6FAB22383B6A00E7FD63 /* Build configuration list for PBXNativeTarget "KcalLogger" */;
+			buildPhases = (
+				3A38C9FC89007F60A31B1D52 /* [CP] Check Pods Manifest.lock */,
+				801F6F7F22383B6900E7FD63 /* Sources */,
+				801F6F8022383B6900E7FD63 /* Frameworks */,
+				801F6F8122383B6900E7FD63 /* Resources */,
+				3B791BE3145F87952F204A37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KcalLogger;
+			productName = KcalLogger;
+			productReference = 801F6F8322383B6900E7FD63 /* KcalLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		801F6F9622383B6A00E7FD63 /* KcalLoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801F6FAE22383B6A00E7FD63 /* Build configuration list for PBXNativeTarget "KcalLoggerTests" */;
+			buildPhases = (
+				F9B2EACDA71E5AEBE7F68DD7 /* [CP] Check Pods Manifest.lock */,
+				801F6F9322383B6A00E7FD63 /* Sources */,
+				801F6F9422383B6A00E7FD63 /* Frameworks */,
+				801F6F9522383B6A00E7FD63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				801F6F9922383B6A00E7FD63 /* PBXTargetDependency */,
+			);
+			name = KcalLoggerTests;
+			productName = KcalLoggerTests;
+			productReference = 801F6F9722383B6A00E7FD63 /* KcalLoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		801F6FA122383B6A00E7FD63 /* KcalLoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801F6FB122383B6A00E7FD63 /* Build configuration list for PBXNativeTarget "KcalLoggerUITests" */;
+			buildPhases = (
+				A13488D70297C1E05AEE112D /* [CP] Check Pods Manifest.lock */,
+				801F6F9E22383B6A00E7FD63 /* Sources */,
+				801F6F9F22383B6A00E7FD63 /* Frameworks */,
+				801F6FA022383B6A00E7FD63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				801F6FA422383B6A00E7FD63 /* PBXTargetDependency */,
+			);
+			name = KcalLoggerUITests;
+			productName = KcalLoggerUITests;
+			productReference = 801F6FA222383B6A00E7FD63 /* KcalLoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		801F6F7B22383B6900E7FD63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Luís Machado";
+				TargetAttributes = {
+					801F6F8222383B6900E7FD63 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					801F6F9622383B6A00E7FD63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 801F6F8222383B6900E7FD63;
+					};
+					801F6FA122383B6A00E7FD63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 801F6F8222383B6900E7FD63;
+					};
+				};
+			};
+			buildConfigurationList = 801F6F7E22383B6900E7FD63 /* Build configuration list for PBXProject "KcalLogger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 801F6F7A22383B6900E7FD63;
+			productRefGroup = 801F6F8422383B6900E7FD63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				801F6F8222383B6900E7FD63 /* KcalLogger */,
+				801F6F9622383B6A00E7FD63 /* KcalLoggerTests */,
+				801F6FA122383B6A00E7FD63 /* KcalLoggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		801F6F8122383B6900E7FD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AEFA5C223CF9A900A919BD /* CreateEditMeal.storyboard in Resources */,
+				801F6F9122383B6A00E7FD63 /* LaunchScreen.storyboard in Resources */,
+				80435E89223AAD410089F489 /* GoogleService-Info.plist in Resources */,
+				801F6F8E22383B6A00E7FD63 /* Assets.xcassets in Resources */,
+				80BF6C072242BA6500E0EBF6 /* Adminstration.storyboard in Resources */,
+				80D01715223ACF8B0056B1B3 /* Settings.storyboard in Resources */,
+				80435E8C223AAF3C0089F489 /* Login.storyboard in Resources */,
+				801F6F8C22383B6900E7FD63 /* MealList.storyboard in Resources */,
+				80447CB92244003800D88738 /* EditingUserInfo.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801F6F9522383B6A00E7FD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801F6FA022383B6A00E7FD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A38C9FC89007F60A31B1D52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KcalLogger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B791BE3145F87952F204A37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KcalLogger/Pods-KcalLogger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher-framework/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities-framework/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView-framework/KRActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/KRProgressHUD-framework/KRProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library-framework/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb-framework/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KcalLogger/Pods-KcalLogger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A13488D70297C1E05AEE112D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KcalLoggerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B2EACDA71E5AEBE7F68DD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KcalLoggerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		801F6F7F22383B6900E7FD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804AE84F2248F9EC00798734 /* LoginViewModel.swift in Sources */,
+				80902549223FCABA00C4C660 /* MealListViewModelProtocol.swift in Sources */,
+				8029005A2242AAD60071FB3B /* Common+Extensions.swift in Sources */,
+				80447CB72243EBCF00D88738 /* RolesViewModel.swift in Sources */,
+				80BF6C0A2242C0CE00E0EBF6 /* AdministrationViewModel.swift in Sources */,
+				80D1939B22454F8200C9B1FE /* TimeExtension.swift in Sources */,
+				80D0170A223AB67D0056B1B3 /* LoginViewController.swift in Sources */,
+				80AEFA5E223CFE4E00A919BD /* CreateEditMealViewModel.swift in Sources */,
+				802900752242AAD70071FB3B /* DatePickerViewController.swift in Sources */,
+				80902551224019FD00C4C660 /* MealListsViewModel_Mock.swift in Sources */,
+				80447C9E2243E26C00D88738 /* OneTextFieldViewController.swift in Sources */,
+				802900582242AAD60071FB3B /* UIAlertController+Extensions.swift in Sources */,
+				80D193992245098C00C9B1FE /* ChangePasswordViewModelProtocol.swift in Sources */,
+				80D01711223ABE630056B1B3 /* UserApi.swift in Sources */,
+				80D01713223ABFEE0056B1B3 /* ApiExtensions.swift in Sources */,
+				804AE84B2248F88000798734 /* MealListViewController+Table.swift in Sources */,
+				80112710223C2DE3001A7063 /* MealCell.swift in Sources */,
+				80435E8E223AB28F0089F489 /* Configs.swift in Sources */,
+				80447CB12243E2CC00D88738 /* TextField.swift in Sources */,
+				80435E90223AB2BF0089F489 /* Extensions.swift in Sources */,
+				80447CB52243EB8700D88738 /* RolesViewController.swift in Sources */,
+				80ED6F7C223EB10300AA344E /* CreateEditMealViewModelProtocol.swift in Sources */,
+				80D0170E223ABB5C0056B1B3 /* RegistrationViewController.swift in Sources */,
+				801F6FC122383B8800E7FD63 /* AppUser.swift in Sources */,
+				80BF6C0E2242C32A00E0EBF6 /* AdministrationViewModelProtocol.swift in Sources */,
+				80D0170C223ABA6C0056B1B3 /* AlertHelper.swift in Sources */,
+				80D01719223AD2EE0056B1B3 /* SettingsViewModel.swift in Sources */,
+				80D19395224502DA00C9B1FE /* ChangePasswordViewController.swift in Sources */,
+				8011270C223C2554001A7063 /* MealListViewModel.swift in Sources */,
+				801F6F8922383B6900E7FD63 /* MealListViewController.swift in Sources */,
+				801F6FC022383B8800E7FD63 /* Meal.swift in Sources */,
+				80AEFA52223CE3A900A919BD /* MealApiProtocol.swift in Sources */,
+				801F6F8722383B6900E7FD63 /* AppDelegate.swift in Sources */,
+				80ED6F7A223E9A7400AA344E /* Dynamic.swift in Sources */,
+				80BF6C0C2242C0DB00E0EBF6 /* AdministrationViewController.swift in Sources */,
+				80AEFA4E223CDFEB00A919BD /* UserAPI_Mock.swift in Sources */,
+				80AEFA54223CE51D00A919BD /* MealApi.swift in Sources */,
+				80447CBB2244009500D88738 /* EditingUserInfo.swift in Sources */,
+				80D01717223AD0DD0056B1B3 /* SettingsViewController.swift in Sources */,
+				80AEFA59223CF99300A919BD /* CreateEditMealViewController.swift in Sources */,
+				802900502242AAD60071FB3B /* UIView+Extensions.swift in Sources */,
+				80D193972245065600C9B1FE /* ChangePasswordViewModel.swift in Sources */,
+				804AE84D2248F8E300798734 /* MealListViewController+Filter.swift in Sources */,
+				80AEFA56223CE7B800A919BD /* AppUserOperations.swift in Sources */,
+				80112704223BC083001A7063 /* UserApiProtocol.swift in Sources */,
+				8009ECC8224676CC0056DB68 /* RegistrationViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801F6F9322383B6A00E7FD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80112702223BBFEE001A7063 /* UserFlowTest.swift in Sources */,
+				8066D17B2246D20200AFD002 /* MealListModelTest.swift in Sources */,
+				8009ECCD2246A5F40056DB68 /* UserAPITests.swift in Sources */,
+				8009ECCB224692340056DB68 /* MealAPITests.swift in Sources */,
+				80309EA822398753007C8922 /* UserTests.swift in Sources */,
+				80FEAFF022415E3B00B0C607 /* CalorieExcessTest.swift in Sources */,
+				80112700223BBDC6001A7063 /* UserAPI_Mock.swift in Sources */,
+				8090254C2240135600C4C660 /* MealListsViewModel_Mock.swift in Sources */,
+				801F6FC322383CD000E7FD63 /* MealTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801F6F9E22383B6A00E7FD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80902550224018BD00C4C660 /* MealLogicUITests.swift in Sources */,
+				8011270A223C1E5B001A7063 /* SettingsUITests.swift in Sources */,
+				801F6FA722383B6A00E7FD63 /* KcalLoggerUITests.swift in Sources */,
+				8009EC952246422C0056DB68 /* AdminUITests.swift in Sources */,
+				8009ECC6224651E40056DB68 /* FilterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		801F6F9922383B6A00E7FD63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 801F6F8222383B6900E7FD63 /* KcalLogger */;
+			targetProxy = 801F6F9822383B6A00E7FD63 /* PBXContainerItemProxy */;
+		};
+		801F6FA422383B6A00E7FD63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 801F6F8222383B6900E7FD63 /* KcalLogger */;
+			targetProxy = 801F6FA322383B6A00E7FD63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		801F6F8A22383B6900E7FD63 /* MealList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801F6F8B22383B6900E7FD63 /* Base */,
+			);
+			name = MealList.storyboard;
+			sourceTree = "<group>";
+		};
+		801F6F8F22383B6A00E7FD63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801F6F9022383B6A00E7FD63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		801F6FA922383B6A00E7FD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		801F6FAA22383B6A00E7FD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		801F6FAC22383B6A00E7FD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2C5668BC7FA7647445C73C /* Pods-KcalLogger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJHBLUH3VK;
+				INFOPLIST_FILE = KcalLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luismachado.KcalLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		801F6FAD22383B6A00E7FD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 194461C3344D076DCF8F81F6 /* Pods-KcalLogger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJHBLUH3VK;
+				INFOPLIST_FILE = KcalLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luismachado.KcalLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		801F6FAF22383B6A00E7FD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3737814A0CE28AB4DA5C957 /* Pods-KcalLoggerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KcalLogger.app/KcalLogger";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJHBLUH3VK;
+				INFOPLIST_FILE = KcalLoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luismachado.KcalLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KcalLogger.app/KcalLogger";
+			};
+			name = Debug;
+		};
+		801F6FB022383B6A00E7FD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFAF4B9EF95850B5AB935E0 /* Pods-KcalLoggerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KcalLogger.app/KcalLogger";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJHBLUH3VK;
+				INFOPLIST_FILE = KcalLoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luismachado.KcalLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KcalLogger.app/KcalLogger";
+			};
+			name = Release;
+		};
+		801F6FB222383B6A00E7FD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECAEF59C192551059711B70 /* Pods-KcalLoggerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJHBLUH3VK;
+				INFOPLIST_FILE = KcalLoggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luismachado.KcalLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KcalLogger;
+			};
+			name = Debug;
+		};
+		801F6FB322383B6A00E7FD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7444FFED5DB0DA40FCAFF62E /* Pods-KcalLoggerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJHBLUH3VK;
+				INFOPLIST_FILE = KcalLoggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luismachado.KcalLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KcalLogger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		801F6F7E22383B6900E7FD63 /* Build configuration list for PBXProject "KcalLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801F6FA922383B6A00E7FD63 /* Debug */,
+				801F6FAA22383B6A00E7FD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801F6FAB22383B6A00E7FD63 /* Build configuration list for PBXNativeTarget "KcalLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801F6FAC22383B6A00E7FD63 /* Debug */,
+				801F6FAD22383B6A00E7FD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801F6FAE22383B6A00E7FD63 /* Build configuration list for PBXNativeTarget "KcalLoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801F6FAF22383B6A00E7FD63 /* Debug */,
+				801F6FB022383B6A00E7FD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801F6FB122383B6A00E7FD63 /* Build configuration list for PBXNativeTarget "KcalLoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801F6FB222383B6A00E7FD63 /* Debug */,
+				801F6FB322383B6A00E7FD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 801F6F7B22383B6900E7FD63 /* Project object */;
+}

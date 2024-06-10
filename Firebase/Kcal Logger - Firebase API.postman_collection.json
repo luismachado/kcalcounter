@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "7474a677-86b9-40f1-836e-fa7c391b0865",
+		"name": "Kcal Logger - Firebase API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "FetchAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/users.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"users.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/users/ehdOoNmNL0goDGSPDth1phwMqEB2.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"users",
+								"ehdOoNmNL0goDGSPDth1phwMqEB2.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"dailyCalories\": 2440,\n        \"email\": \"apitest@email.com\",\n        \"roles\": [\"User\"],\n        \"username\": \"apiTestUser\"\n}"
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/users/ehdOoNmNL0goDGSPDth1phwMqEB2.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"users",
+								"ehdOoNmNL0goDGSPDth1phwMqEB2.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"dailyCalories\": 1111,\n        \"email\": \"postman@email.com\",\n        \"roles\": [\"User\"],\n        \"username\": \"postman\"\n}"
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/users_to_create.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"users_to_create.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Admin Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"user\": \"r3k1FDQbCfcjDdyzdBMqoBTAdOn2\"\n    }"
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/users_to_delete.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"users_to_delete.json"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meal",
+			"item": [
+				{
+					"name": "Get Meals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/meal_list/ehdOoNmNL0goDGSPDth1phwMqEB2.json?orderBy=\"dateOrder\"",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"meal_list",
+								"ehdOoNmNL0goDGSPDth1phwMqEB2.json"
+							],
+							"query": [
+								{
+									"key": "orderBy",
+									"value": "\"dateOrder\""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Meals (with filters)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/meal_list/ehdOoNmNL0goDGSPDth1phwMqEB2.json?orderBy=\"date\"&startAt=1553299200&endAt=1553361356",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"meal_list",
+								"ehdOoNmNL0goDGSPDth1phwMqEB2.json"
+							],
+							"query": [
+								{
+									"key": "orderBy",
+									"value": "\"date\""
+								},
+								{
+									"key": "startAt",
+									"value": "1553299200"
+								},
+								{
+									"key": "endAt",
+									"value": "1553361356"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Meal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"date\": 1553060840,\n        \"description\": \"Testing Wednesday\",\n        \"hoursMinutes\": \"05:47\",\n        \"kcalAmount\": 230\n    }"
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/meal_list/ehdOoNmNL0goDGSPDth1phwMqEB2.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"meal_list",
+								"ehdOoNmNL0goDGSPDth1phwMqEB2.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Meal",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"date\": 1552912945,\n        \"description\": \"Huge kCal Meal!\",\n        \"hoursMinutes\": \"12:42\",\n        \"kcalAmount\": 42000\n}"
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/meal_list/ehdOoNmNL0goDGSPDth1phwMqEB2/-Lagbg3wviNqBhaq-uSB.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"meal_list",
+								"ehdOoNmNL0goDGSPDth1phwMqEB2",
+								"-Lagbg3wviNqBhaq-uSB.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Meal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://kcallogger.firebaseio.com/meal_list/ehdOoNmNL0goDGSPDth1phwMqEB2/-Lagbg3wviNqBhaq-uSB.json",
+							"protocol": "https",
+							"host": [
+								"kcallogger",
+								"firebaseio",
+								"com"
+							],
+							"path": [
+								"meal_list",
+								"ehdOoNmNL0goDGSPDth1phwMqEB2",
+								"-Lagbg3wviNqBhaq-uSB.json"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"apitest@email.com\",\n\t\"password\" : \"qwerty1234\",\n\t\"returnSecureToken\" : true\n}"
+						},
+						"url": {
+							"raw": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"identitytoolkit",
+								"v3",
+								"relyingparty",
+								"verifyPassword"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"apitest@email.com\",\n\t\"password\" : \"qwerty1234\",\n\t\"returnSecureToken\" : true\n}"
+						},
+						"url": {
+							"raw": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"identitytoolkit",
+								"v3",
+								"relyingparty",
+								"signupNewUser"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check if email exists",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"identifier\" : \"apitest@email.com\",\n\t\"continueUri\" : \"http://localhost:8080/app\"\n}"
+						},
+						"url": {
+							"raw": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"identitytoolkit",
+								"v3",
+								"relyingparty",
+								"createAuthUri"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recover password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"apitest@email.com\",\n\t\"requestType\" : \"PASSWORD_RESET\"\n}"
+						},
+						"url": {
+							"raw": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getOobConfirmationCode?key=AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"identitytoolkit",
+								"v3",
+								"relyingparty",
+								"getOobConfirmationCode"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change passwrod",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idToken\" : \"TOKEN\",\n\t\"password\" : \"newPassword\",\n\t\"returnSecureToken\" : true\n}"
+						},
+						"url": {
+							"raw": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/setAccountInfo?key=AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"identitytoolkit",
+								"v3",
+								"relyingparty",
+								"setAccountInfo"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "AIzaSyCkfI_8vLl1mGS88P7vKccZuu9waHKaAJ8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
